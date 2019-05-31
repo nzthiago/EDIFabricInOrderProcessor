@@ -35,3 +35,6 @@ The code will:
 You can then create a processor in Logic Apps or Functions or other to process the orders from that second queue, and fan out a processor per sender + shipment ID.
 
 Test changing the Session ID for X12 messages going into the first queue, and then change the B204 values for the shipments as well, to see the new sessions show up on the second queue.
+
+DISCLAIMER: This code is early investigation and rough, and uses the [trial EDI Fabric](https://www.edifabric.com/) EdiFabric.Templates.X12 Nuget Package and is not meant for production.
+
